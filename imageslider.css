@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width:500px;
+    overflow: hidden;
+}
+
+#sliderbox{
+    position: relative;
+    width: 2002px;
+    animation-name: slideranimation;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+
+}
+
+#sliderbox img{
+    float: left; /*isse sari imagea horizontal line mein show hone lagegi*/
+} 
+
+@keyframes slideranimation{
+    0%
+    {
+        left: 0px;
+    }
+     20%{
+        left: 0px; /* humne 20% par isliye likha taki atleat 3.2s tak same image hi show ho otherwise 0s ke baad se hi woh doosri image par slide hone lagti*/
+    } 
+    25%{
+        left: -500px;
+    }
+    45%{
+        left: -500px;
+    }
+    50%{
+        left: -1001px;
+    }
+    70%{
+        left: -1001px;
+    }
+    75%{
+        left: -1502px;
+    }  
+}
